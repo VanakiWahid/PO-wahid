@@ -1,0 +1,9 @@
+services:
+    app:
+        image: sr
+        entrypoint: bash
+        stdin_open: true 
+        tty: true
+        volumes:
+        - C:\Users\wahidvanaki\Desktop\PO-wahid\input:/app/Social-Reporter/input:rw
+        - C:\Users\wahidvanaki\Desktop\PO-wahid\output:/app/Social-Reporter/output:rw
