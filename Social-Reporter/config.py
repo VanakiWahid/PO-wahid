@@ -28,5 +28,5 @@ def init():
     emotion_model = EmotionRecognition(device='cpu', gpu_id=0)
     time_to_leave_in_sec = 5
     lectureKeyWords = open("./keywords.txt", "r").read().split(";")
-    path_tesseract = "/usr/share/tesseract-ocr/4.00/tessdata"
-    pytesseract.tesseract_cmd = "/usr/share/tesseract-ocr/4.00/tessdata"
+    path_tesseract = "/usr/bin/tesseract"
+    pytesseract.tesseract_cmd = "/usr/bin/tesseract"
